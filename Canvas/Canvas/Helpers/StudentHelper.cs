@@ -80,5 +80,12 @@ public void SearchStudents()
     studentService.Search(query).ToList().ForEach(Console.WriteLine);
 }
 
+public void CreateGroup()
+{
+    //get full num students
+    //div num by 3, round up if remainder
+    //loop through students put in group
+}
+
     }
 }
