@@ -1,0 +1,5 @@
+C:\Users\Jeremiah Daniels\SWECap\Capstone-Project\Canvas\obj\Debug\net8.0\Canvas.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Jeremiah Daniels\SWECap\Capstone-Project\Canvas\obj\Debug\net8.0\Canvas.AssemblyInfoInputs.cache
+C:\Users\Jeremiah Daniels\SWECap\Capstone-Project\Canvas\obj\Debug\net8.0\Canvas.AssemblyInfo.cs
+C:\Users\Jeremiah Daniels\SWECap\Capstone-Project\Canvas\obj\Debug\net8.0\Canvas.csproj.CoreCompileInputs.cache
+C:\Users\Jeremiah Daniels\SWECap\Capstone-Project\Canvas\obj\Debug\net8.0\Canvas.sourcelink.json

@@ -57,3 +57,18 @@ c:/Users/Corso/Desktop/Canvas/Canvas/obj/Debug/net8.0/ref/Canvas.dll
 /Users/aarongallon/CSharp_Project-1/Canvas/Canvas/bin/Debug/net8.0/Canvas.pdb
 /Users/aarongallon/CSharp_Project-1/Canvas/Canvas/obj/Debug/net8.0/Canvas.genruntimeconfig.cache
 /Users/aarongallon/CSharp_Project-1/Canvas/Canvas/obj/Debug/net8.0/ref/Canvas.dll
+C:\Users\Jeremiah Daniels\SWECap\Capstone-Project\Canvas\Canvas\obj\Debug\net8.0\Canvas.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Jeremiah Daniels\SWECap\Capstone-Project\Canvas\Canvas\obj\Debug\net8.0\Canvas.AssemblyInfoInputs.cache
+C:\Users\Jeremiah Daniels\SWECap\Capstone-Project\Canvas\Canvas\obj\Debug\net8.0\Canvas.AssemblyInfo.cs
+C:\Users\Jeremiah Daniels\SWECap\Capstone-Project\Canvas\Canvas\obj\Debug\net8.0\Canvas.csproj.CoreCompileInputs.cache
+C:\Users\Jeremiah Daniels\SWECap\Capstone-Project\Canvas\Canvas\obj\Debug\net8.0\Canvas.sourcelink.json
+C:\Users\Jeremiah Daniels\SWECap\Capstone-Project\Canvas\Canvas\obj\Debug\net8.0\Canvas.dll
+C:\Users\Jeremiah Daniels\SWECap\Capstone-Project\Canvas\Canvas\obj\Debug\net8.0\refint\Canvas.dll
+C:\Users\Jeremiah Daniels\SWECap\Capstone-Project\Canvas\Canvas\obj\Debug\net8.0\Canvas.pdb
+C:\Users\Jeremiah Daniels\SWECap\Capstone-Project\Canvas\Canvas\bin\Debug\net8.0\Canvas.exe
+C:\Users\Jeremiah Daniels\SWECap\Capstone-Project\Canvas\Canvas\bin\Debug\net8.0\Canvas.deps.json
+C:\Users\Jeremiah Daniels\SWECap\Capstone-Project\Canvas\Canvas\bin\Debug\net8.0\Canvas.runtimeconfig.json
+C:\Users\Jeremiah Daniels\SWECap\Capstone-Project\Canvas\Canvas\bin\Debug\net8.0\Canvas.dll
+C:\Users\Jeremiah Daniels\SWECap\Capstone-Project\Canvas\Canvas\bin\Debug\net8.0\Canvas.pdb
+C:\Users\Jeremiah Daniels\SWECap\Capstone-Project\Canvas\Canvas\obj\Debug\net8.0\Canvas.genruntimeconfig.cache
+C:\Users\Jeremiah Daniels\SWECap\Capstone-Project\Canvas\Canvas\obj\Debug\net8.0\ref\Canvas.dll
