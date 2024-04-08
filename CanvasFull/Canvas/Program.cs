@@ -30,7 +30,9 @@ namespace Canvas // Note: actual namespace depends on the project name.
                     Console.WriteLine("7. Update Course");
                     Console.WriteLine("8. Search Course");
                     Console.WriteLine("9. List Courses");
-                    Console.WriteLine("10. Exit");
+                    Console.WriteLine("10. List Courses");
+                    Console.WriteLine("11. List Courses");
+                    Console.WriteLine("12. Exit");
                     var input = Console.ReadLine();
             if (int.TryParse(input, out int result))
             {  
@@ -63,6 +65,12 @@ namespace Canvas // Note: actual namespace depends on the project name.
                         courseHelper.ListCourses();
                     }
                     else if(result == 10){
+                        studentHelper.CreateGroup();
+                    }
+                    else if(result == 11){
+                        studentHelper.ListGroups();
+                    }
+                    else if(result == 12){
                         cont = false;
                     }
                 }

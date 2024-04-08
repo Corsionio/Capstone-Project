@@ -25,7 +25,7 @@ internal class Program
             Console.WriteLine("6. update a course");
             Console.WriteLine("7. List all courses");
             Console.WriteLine("8. Group Students"); //new feat
-            Console.WriteLine("9. Display Groups")
+            Console.WriteLine("9. Display Groups");
             Console.WriteLine("10. Exit");
             var input = Console.ReadLine();
             if (int.TryParse(input, out int result))

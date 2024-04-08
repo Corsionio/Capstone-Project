@@ -30,5 +30,22 @@ namespace Canvas.Services{
                 Students[i] = studentUpdate;
             }
         }
+
+        public void Group(){
+            if(studentList.Empty()){
+                Console.WriteLine("No students to group");
+            }
+            else{
+                int numGroups = studentList.Count / 3;  //determine number of groups, int division
+                int temp = numGroups;   //used to start mod math
+                int num=0;
+                List<Person>[] groupArr = new List<Person>[numGroups];  //create arr of lists represent groups
+                for(int i=0; i<studentList.Count; i++){ //loop thru students
+                    num=numGroups%temp; //ind of arr based off numGroups mod temp
+                    groupArr[num].Add(studentList[i]);  //add to list in each arr
+                    temp++;
+                }
+            }
+        }
     }
 }

@@ -82,5 +82,15 @@ namespace Canvas.Helpers{
             studentService.Search(query).ToList().ForEach(Console.WriteLine);
         }
 
+        public void CreateGroup()
+        {
+
+        }
+
+        public void ListGroups()
+        {
+            
+        }
+
     }
 }
