@@ -30,8 +30,8 @@ namespace Canvas // Note: actual namespace depends on the project name.
                     Console.WriteLine("7. Update Course");
                     Console.WriteLine("8. Search Course");
                     Console.WriteLine("9. List Courses");
-                    Console.WriteLine("10. List Courses");
-                    Console.WriteLine("11. List Courses");
+                    Console.WriteLine("10. Create Groups");
+                    Console.WriteLine("11. List Groups");
                     Console.WriteLine("12. Exit");
                     var input = Console.ReadLine();
             if (int.TryParse(input, out int result))

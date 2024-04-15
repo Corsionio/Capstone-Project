@@ -31,9 +31,10 @@ namespace Canvas.Services{
             }
         }
 
-        public void Group(){
-            if(studentList.Empty()){
+        public List<Person>[] Group(){
+            if(studentList.Count == 0){
                 Console.WriteLine("No students to group");
+                return new List<Person>[1];
             }
             else{
                 int numGroups = studentList.Count / 3;  //determine number of groups, int division
@@ -45,6 +46,7 @@ namespace Canvas.Services{
                     groupArr[num].Add(studentList[i]);  //add to list in each arr
                     temp++;
                 }
+                return groupArr;
             }
         }
     }
