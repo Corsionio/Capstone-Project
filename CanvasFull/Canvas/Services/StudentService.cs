@@ -32,7 +32,7 @@ namespace Canvas.Services{
         }
 
         public void Group(){
-            if(studentList.Empty()){
+            if(studentList.Count()==0){
                 Console.WriteLine("No students to group");
             }
             else{
