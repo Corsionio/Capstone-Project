@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\Corso\\Desktop\\CanvasFull\\Canvas\\Canvas.csproj": {}
+    "C:\\Users\\Jeremiah Daniels\\SWECap\\Capstone-Project-1\\CanvasFull\\Canvas\\Canvas.csproj": {}
   },
   "projects": {
-    "c:\\Users\\Corso\\Desktop\\CanvasFull\\Canvas\\Canvas.csproj": {
+    "C:\\Users\\Jeremiah Daniels\\SWECap\\Capstone-Project-1\\CanvasFull\\Canvas\\Canvas.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\Corso\\Desktop\\CanvasFull\\Canvas\\Canvas.csproj",
+        "projectUniqueName": "C:\\Users\\Jeremiah Daniels\\SWECap\\Capstone-Project-1\\CanvasFull\\Canvas\\Canvas.csproj",
         "projectName": "Canvas",
-        "projectPath": "c:\\Users\\Corso\\Desktop\\CanvasFull\\Canvas\\Canvas.csproj",
-        "packagesPath": "C:\\Users\\Corso\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\Corso\\Desktop\\CanvasFull\\Canvas\\obj\\",
+        "projectPath": "C:\\Users\\Jeremiah Daniels\\SWECap\\Capstone-Project-1\\CanvasFull\\Canvas\\Canvas.csproj",
+        "packagesPath": "C:\\Users\\Jeremiah Daniels\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Jeremiah Daniels\\SWECap\\Capstone-Project-1\\CanvasFull\\Canvas\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Corso\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\Jeremiah Daniels\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"

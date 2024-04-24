@@ -8,19 +8,19 @@
     "net8.0": []
   },
   "packageFolders": {
-    "C:\\Users\\Corso\\.nuget\\packages\\": {}
+    "C:\\Users\\Jeremiah Daniels\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Corso\\Desktop\\CanvasFull\\Canvas\\Canvas.csproj",
+      "projectUniqueName": "C:\\Users\\Jeremiah Daniels\\SWECap\\Capstone-Project-1\\CanvasFull\\Canvas\\Canvas.csproj",
       "projectName": "Canvas",
-      "projectPath": "C:\\Users\\Corso\\Desktop\\CanvasFull\\Canvas\\Canvas.csproj",
-      "packagesPath": "C:\\Users\\Corso\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Corso\\Desktop\\CanvasFull\\Canvas\\obj\\",
+      "projectPath": "C:\\Users\\Jeremiah Daniels\\SWECap\\Capstone-Project-1\\CanvasFull\\Canvas\\Canvas.csproj",
+      "packagesPath": "C:\\Users\\Jeremiah Daniels\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Jeremiah Daniels\\SWECap\\Capstone-Project-1\\CanvasFull\\Canvas\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Corso\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\Jeremiah Daniels\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"

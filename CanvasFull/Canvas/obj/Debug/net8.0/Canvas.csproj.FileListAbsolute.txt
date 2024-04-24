@@ -41,3 +41,18 @@ c:\Users\Corso\Desktop\CanvasFull\Canvas\obj\Debug\net8.0\refint\Canvas.dll
 c:\Users\Corso\Desktop\CanvasFull\Canvas\obj\Debug\net8.0\Canvas.pdb
 c:\Users\Corso\Desktop\CanvasFull\Canvas\obj\Debug\net8.0\Canvas.genruntimeconfig.cache
 c:\Users\Corso\Desktop\CanvasFull\Canvas\obj\Debug\net8.0\ref\Canvas.dll
+C:\Users\Jeremiah Daniels\SWECap\Capstone-Project-1\CanvasFull\Canvas\obj\Debug\net8.0\Canvas.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Jeremiah Daniels\SWECap\Capstone-Project-1\CanvasFull\Canvas\obj\Debug\net8.0\Canvas.AssemblyInfoInputs.cache
+C:\Users\Jeremiah Daniels\SWECap\Capstone-Project-1\CanvasFull\Canvas\obj\Debug\net8.0\Canvas.AssemblyInfo.cs
+C:\Users\Jeremiah Daniels\SWECap\Capstone-Project-1\CanvasFull\Canvas\obj\Debug\net8.0\Canvas.csproj.CoreCompileInputs.cache
+C:\Users\Jeremiah Daniels\SWECap\Capstone-Project-1\CanvasFull\Canvas\obj\Debug\net8.0\Canvas.sourcelink.json
+C:\Users\Jeremiah Daniels\SWECap\Capstone-Project-1\CanvasFull\Canvas\obj\Debug\net8.0\Canvas.dll
+C:\Users\Jeremiah Daniels\SWECap\Capstone-Project-1\CanvasFull\Canvas\obj\Debug\net8.0\refint\Canvas.dll
+C:\Users\Jeremiah Daniels\SWECap\Capstone-Project-1\CanvasFull\Canvas\obj\Debug\net8.0\Canvas.pdb
+C:\Users\Jeremiah Daniels\SWECap\Capstone-Project-1\CanvasFull\Canvas\bin\Debug\net8.0\Canvas.exe
+C:\Users\Jeremiah Daniels\SWECap\Capstone-Project-1\CanvasFull\Canvas\bin\Debug\net8.0\Canvas.deps.json
+C:\Users\Jeremiah Daniels\SWECap\Capstone-Project-1\CanvasFull\Canvas\bin\Debug\net8.0\Canvas.runtimeconfig.json
+C:\Users\Jeremiah Daniels\SWECap\Capstone-Project-1\CanvasFull\Canvas\bin\Debug\net8.0\Canvas.dll
+C:\Users\Jeremiah Daniels\SWECap\Capstone-Project-1\CanvasFull\Canvas\bin\Debug\net8.0\Canvas.pdb
+C:\Users\Jeremiah Daniels\SWECap\Capstone-Project-1\CanvasFull\Canvas\obj\Debug\net8.0\Canvas.genruntimeconfig.cache
+C:\Users\Jeremiah Daniels\SWECap\Capstone-Project-1\CanvasFull\Canvas\obj\Debug\net8.0\ref\Canvas.dll

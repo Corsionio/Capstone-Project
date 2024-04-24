@@ -31,22 +31,37 @@ namespace Canvas.Services{
             }
         }
 
-        public List<Person>[] Group(){
+        public void Group(){
             if(studentList.Count == 0){
                 Console.WriteLine("No students to group");
-                return new List<Person>[1];
             }
             else{
-                int numGroups = studentList.Count / 3;  //determine number of groups, int division
-                int temp = numGroups;   //used to start mod math
-                int num=0;
+                int numGroups = (Students.Count + 3-1) / 3;  //determine number of groups, int division, ceil                
+                int temp=0;   //used to start mod math
+                
                 List<Person>[] groupArr = new List<Person>[numGroups];  //create arr of lists represent groups
-                for(int i=0; i<studentList.Count; i++){ //loop thru students
-                    num=numGroups%temp; //ind of arr based off numGroups mod temp
-                    groupArr[num].Add(studentList[i]);  //add to list in each arr
-                    temp++;
+                
+                for(int i=0; i<groupArr.Length;i++){
+                    groupArr[i] = new List<Person>();   //initialize list
                 }
-                return groupArr;
+
+                for(int i=0; i<Students.Count; i++){ //loop thru students
+                        
+                    groupArr[temp].Add(Students[i]);  //add to list in each arr
+                    temp++;
+                    if(temp==(numGroups)){
+                        temp=0;
+                    }
+                }
+
+                //print groups
+                for(int i=0;i<groupArr.Length; i++){
+                Console.WriteLine("Group " + (i+1) +": ");
+                
+                groupArr[i].ForEach(Console.WriteLine);
+               
+                }
+                Console.WriteLine("Groups have been created");
             }
         }
     }

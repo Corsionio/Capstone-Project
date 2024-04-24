@@ -85,20 +85,6 @@ namespace Canvas.Helpers{
         public void CreateGroup()
         {
             studentService.Group();
-            Console.WriteLine("Groups have been created");
-        }
-
-        public void ListGroups()
-        {
-            List<Person>[] arrOfGroups = studentService.Group();
-            for(int i=0;i<arrOfGroups.Length; i++){
-                Console.WriteLine("Group ",i,": ");
-                for(int j=0;j<arrOfGroups[i].Count; j++){
-                    Console.Write(arrOfGroups[i].Name," ");
-                }
-                //Console.WriteLine("Group ",i,": ",arrOfGroups[i].Name);
-            }
-            //studentService.Group.ForEach(Console.WriteLine);
         }
 
     }
