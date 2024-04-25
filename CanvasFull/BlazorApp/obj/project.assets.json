@@ -1,11 +1,48 @@
 {
   "version": 3,
   "targets": {
-    "net8.0": {}
+    "net8.0": {
+      "Canvas/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/Canvas.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Canvas.dll": {}
+        }
+      },
+      "Library.Canvas/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "Canvas": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Library.Canvas.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Library.Canvas.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "Canvas/1.0.0": {
+      "type": "project",
+      "path": "../Canvas/Canvas.csproj",
+      "msbuildProject": "../Canvas/Canvas.csproj"
+    },
+    "Library.Canvas/1.0.0": {
+      "type": "project",
+      "path": "../Library.Canvas/Library.Canvas.csproj",
+      "msbuildProject": "../Library.Canvas/Library.Canvas.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net8.0": []
+    "net8.0": [
+      "Library.Canvas >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "/Users/aarongallon/.nuget/packages/": {}
@@ -32,7 +69,11 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "/Users/aarongallon/Capstone-Project-1/CanvasFull/Library.Canvas/Library.Canvas.csproj": {
+              "projectPath": "/Users/aarongallon/Capstone-Project-1/CanvasFull/Library.Canvas/Library.Canvas.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

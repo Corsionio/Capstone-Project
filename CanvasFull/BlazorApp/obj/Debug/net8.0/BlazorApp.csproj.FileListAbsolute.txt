@@ -28,3 +28,12 @@
 /Users/aarongallon/Capstone-Project-1/CanvasFull/BlazorApp/obj/Debug/net8.0/BlazorApp.pdb
 /Users/aarongallon/Capstone-Project-1/CanvasFull/BlazorApp/obj/Debug/net8.0/BlazorApp.genruntimeconfig.cache
 /Users/aarongallon/Capstone-Project-1/CanvasFull/BlazorApp/obj/Debug/net8.0/ref/BlazorApp.dll
+/Users/aarongallon/Capstone-Project-1/CanvasFull/BlazorApp/bin/Debug/net8.0/Canvas.deps.json
+/Users/aarongallon/Capstone-Project-1/CanvasFull/BlazorApp/bin/Debug/net8.0/Canvas.runtimeconfig.json
+/Users/aarongallon/Capstone-Project-1/CanvasFull/BlazorApp/bin/Debug/net8.0/Canvas
+/Users/aarongallon/Capstone-Project-1/CanvasFull/BlazorApp/bin/Debug/net8.0/Canvas.dll
+/Users/aarongallon/Capstone-Project-1/CanvasFull/BlazorApp/bin/Debug/net8.0/Library.Canvas.dll
+/Users/aarongallon/Capstone-Project-1/CanvasFull/BlazorApp/bin/Debug/net8.0/Library.Canvas.pdb
+/Users/aarongallon/Capstone-Project-1/CanvasFull/BlazorApp/bin/Debug/net8.0/Canvas.pdb
+/Users/aarongallon/Capstone-Project-1/CanvasFull/BlazorApp/obj/Debug/net8.0/BlazorApp.csproj.AssemblyReference.cache
+/Users/aarongallon/Capstone-Project-1/CanvasFull/BlazorApp/obj/Debug/net8.0/BlazorApp.csproj.CopyComplete

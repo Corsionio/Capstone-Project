@@ -22,8 +22,8 @@ build_property._RazorSourceGeneratorDebug =
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9BcHAucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/aarongallon/Capstone-Project-1/CanvasFull/BlazorApp/Components/Pages/Counter.razor]
-build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9Db3VudGVyLnJhem9y
+[/Users/aarongallon/Capstone-Project-1/CanvasFull/BlazorApp/Components/Pages/CourseDetail.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9Db3Vyc2VEZXRhaWwucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/aarongallon/Capstone-Project-1/CanvasFull/BlazorApp/Components/Pages/Error.razor]
@@ -32,6 +32,14 @@ build_metadata.AdditionalFiles.CssScope =
 
 [/Users/aarongallon/Capstone-Project-1/CanvasFull/BlazorApp/Components/Pages/Home.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9Ib21lLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/aarongallon/Capstone-Project-1/CanvasFull/BlazorApp/Components/Pages/Instructor.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9JbnN0cnVjdG9yLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/aarongallon/Capstone-Project-1/CanvasFull/BlazorApp/Components/Pages/PersonDetail.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9QZXJzb25EZXRhaWwucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/aarongallon/Capstone-Project-1/CanvasFull/BlazorApp/Components/Pages/Weather.razor]
