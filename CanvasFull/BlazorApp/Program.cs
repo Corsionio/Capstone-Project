@@ -1,11 +1,12 @@
 using BlazorApp.Components;
-
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddRazorComponents()
     .AddInteractiveServerComponents();
 builder.Services.AddSingleton<Library.Canvas.StudentService>();
+builder.Services.AddSingleton<Library.Canvas.CourseService>();
+builder.Services.AddSingleton<Library.Canvas.AssignmentService>();
 
 var app = builder.Build();
 

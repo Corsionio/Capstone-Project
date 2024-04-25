@@ -1,11 +1,14 @@
 ﻿namespace Library.Canvas;
 
+
+
+
 public class CourseService
 {
     
         public List<Course> courseList = new List<Course>();
 
-        private string? query;
+        
         private static readonly object _lock = new object();
         private static CourseService instance;
         public static CourseService Current {
@@ -23,19 +26,10 @@ public class CourseService
             }
         }
 
-        public IEnumerable<Course> Courses {
-            get{
-                return courseList.Where(
-                    c => 
-                        c.Name.ToUpper().Contains(query ?? string.Empty)
-                        || c.Code.ToUpper().Contains(query ?? string.Empty));
-            }
-        }
+    
 
-        public IEnumerable<Course> Search(string query){
-            this.query = query;
-            return Courses;
-        }
+        
+        public IEnumerable<Course> Courses => courseList;
         public CourseService(){
             courseList = new List<Course>();
         }

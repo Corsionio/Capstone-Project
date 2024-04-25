@@ -22,6 +22,10 @@ build_property._RazorSourceGeneratorDebug =
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9BcHAucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
+[/Users/aarongallon/Capstone-Project-1/CanvasFull/BlazorApp/Components/Pages/AssignmentDetail.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9Bc3NpZ25tZW50RGV0YWlsLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Users/aarongallon/Capstone-Project-1/CanvasFull/BlazorApp/Components/Pages/CourseDetail.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9Db3Vyc2VEZXRhaWwucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 

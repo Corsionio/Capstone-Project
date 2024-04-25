@@ -1,19 +1,20 @@
 ﻿@page "/coursedetail"
 @rendermode InteractiveServer
-@using Canvas.Models
 @using Library.Canvas
 @using static Library.Canvas.Course
 @inject Library.Canvas.CourseService CourseService
+@inject NavigationManager NavigationManager
 
 <PageTitle>Course Details</PageTitle>
 
 <h1>Course Details</h1>
+<button class="btn btn-primary" @onclick="AddAssignments">Add Assignments</button>
 
 <p>Here you can add, edit, or delete course information.</p>
 
-<h3>CourseDetail</h3>
+<h3>Course Detail</h3>
 
-<EditForm Model="course">
+<EditForm Model="course" OnValidSubmit="HandleSubmit">
     <div class="form-group">
         <label for="courseName">Course Name:</label>
         <InputText id="courseName" @bind-Value="course.Name" class="form-control" />
@@ -29,6 +30,40 @@
     <button type="submit" class="btn btn-success">Save Course</button>
 </EditForm>
 
+@if(CourseService.Courses.Any()){
+    <h3>Existing Courses</h3>
+    <ul>
+        @foreach(var course in CourseService.Courses)
+        {
+            <li @onclick="@(() => SelectedCourse(course))"
+                style="cursor: pointer; background-color: @(course == _selectedCourse ? "lightblue" : "transparent")">
+                @course.Code - @course.Name: @course.Description
+            </li>
+        }
+    </ul>
+}
+else{
+    <p>No courses added yet.</p>
+}
+
 @code {
-    private Course course;
+    private Course course = new Course();
+
+    private Course _selectedCourse;
+
+    private void HandleSubmit(){
+        CourseService.Add(course);
+        course = new Course(); //reset the course model
+
+    }
+    private void AddAssignments(){
+        if(_selectedCourse!=null){
+            NavigationManager.NavigateTo($"/assignments/{_selectedCourse.Code}");
+        }
+    }
+
+    private void SelectedCourse(Course course){
+        _selectedCourse = course;
+        StateHasChanged();
+    }
 }

@@ -16,6 +16,7 @@
 <button class="btn btn-primary" @onclick="AddEnrollment">Add Enrollemnt</button>
 <button class="btn btn-danger" style="margin-left:10px;" @onclick="DeleteEnrollment">Delete Enrollment</button>
 <button class="btn btn-danger" style="margin-left:10px;" @onclick="EditEnrollment">Edit Enrollment</button>
+<button class="btn btn-primary" style = "margin-left:10px;" @onclick="CourseEnrollment">Enroll Student in Course</button>
 @if (StudentService.Students.Any())
 {
     <ul>
@@ -63,5 +64,8 @@ else
     private void CoursePage()
     {
         NavigationManager.NavigateTo("/coursedetail");
+    }
+    private void CourseEnrollment(){
+
     }
 }

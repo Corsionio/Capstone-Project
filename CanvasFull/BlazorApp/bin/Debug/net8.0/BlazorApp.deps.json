@@ -14,15 +14,7 @@
           "BlazorApp.dll": {}
         }
       },
-      "Canvas/1.0.0": {
-        "runtime": {
-          "Canvas.dll": {}
-        }
-      },
       "Library.Canvas/1.0.0": {
-        "dependencies": {
-          "Canvas": "1.0.0"
-        },
         "runtime": {
           "Library.Canvas.dll": {}
         }
@@ -31,11 +23,6 @@
   },
   "libraries": {
     "BlazorApp/1.0.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "Canvas/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

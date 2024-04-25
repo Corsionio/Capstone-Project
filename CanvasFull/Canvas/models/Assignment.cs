@@ -12,6 +12,10 @@ namespace Canvas.Models{
 
         public string? DueDate {get; set;}
 
+        public string? CourseCode{get; set;}
+
+       
+
         //public decimal TotalAvailablePoints {get; set;}
 
         //public DateTime DueDate {get; set;}
@@ -20,11 +24,12 @@ namespace Canvas.Models{
             
         }
 
-        public Assignment(string? name, string? description, string? totalAvailablePoints, string? dueDate){
+        public Assignment(string? name, string? description, string? totalAvailablePoints, string? dueDate, string? courseCode){
             Name = name;
             Description = description;
             TotalAvailablePoints = totalAvailablePoints;
             DueDate = dueDate;
+            CourseCode = courseCode;
         }
 
         /*public override string ToString()

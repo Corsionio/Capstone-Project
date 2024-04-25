@@ -1,10 +1,12 @@
 using Canvas.Models;
 using Canvas.Services;
+using Library.Canvas;
 using static Canvas.Models.Assignment;
+using AssignmentService = Library.Canvas.AssignmentService;
 
 namespace Canvas.Helpers{
     public class AssignmentHelper{
-        private AssignmentService assignmentService = new AssignmentService();
+        private AssignmentService assignmentService = new Library.Canvas.AssignmentService();
 
         public void AddAssignment(){
             int count = -1;
@@ -33,9 +35,9 @@ namespace Canvas.Helpers{
                 Console.WriteLine("Assignment date Due");
                 var assignmentDueDate = Console.ReadLine();
 
-                Assignment myAssignment;
+                Models.Assignment myAssignment;
 
-                myAssignment = new Assignment(assignmentName, assignmentDescription, 
+                myAssignment = new Models.Assignment(assignmentName, assignmentDescription, 
                             assignmentTotalAvailablePoints, assignmentDueDate);
 
                 courseToAssignment.Assignments.Add(myAssignment);

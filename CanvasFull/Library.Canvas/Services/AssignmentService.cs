@@ -1,6 +1,7 @@
 ﻿
 namespace Library.Canvas;
 
+
 public class AssignmentService
 {
     public IList<Assignment> assignments;
@@ -33,6 +34,8 @@ public class AssignmentService
             }
         }
 
+    
+
         public IEnumerable<Assignment> Search(string query){
             this.query = query;
             return Assignments;
@@ -45,4 +48,9 @@ public class AssignmentService
             
             assignments.Add(assignment);
         }
+
+        public IEnumerable<Assignment> GetAssignmentsByCourse(string courseCode) {
+    // This method simulates fetching assignments related to a specific course code
+    return assignments.Where(a => a.Description.Contains(courseCode) || a.Name.Contains(courseCode));
+}
 }

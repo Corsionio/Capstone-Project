@@ -1,8 +1,10 @@
-using System.Runtime.CompilerServices;
-using Canvas.Models;
 using Canvas.Services;
+using Library.Canvas;
 
-namespace Canvas{
+
+
+namespace Canvas.Helpers
+{
 
     public class CourseHelper
     {
@@ -43,7 +45,7 @@ namespace Canvas{
 
         public void UpdateCourse(){
             int count = -1;
-            foreach(var course in CourseService.Current.Courses){
+            foreach(var course in CourseService.Current.Courses()){
                 Console.WriteLine($"{++count}. {course.Name}, {course.Code}");
             }
 
@@ -51,7 +53,7 @@ namespace Canvas{
             var choice = Console.ReadLine() ?? string.Empty;
             
             if(int.TryParse(choice, out int intChoice)){
-                var courseToUpdate = CourseService.Current.Courses.ElementAt(intChoice);
+                var courseToUpdate = CourseService.Current.Courses().ElementAt(intChoice);
                 Console.WriteLine($"{courseToUpdate}");
 
 
@@ -62,7 +64,7 @@ namespace Canvas{
         }
 
         public void ListCourses(){
-            foreach(var course in CourseService.Current.Courses){
+            foreach(var course in CourseService.Current.Courses()){
                 Console.WriteLine($"{course.Name}, {course.Code}");
             }
         }

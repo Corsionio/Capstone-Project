@@ -1,6 +1,5 @@
-
-
-namespace Canvas.Models {
+namespace Canvas.Models
+{
 
     public class Course {
         public string? Code {get; set;}

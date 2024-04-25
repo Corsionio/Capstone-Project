@@ -1,0 +1,73 @@
+﻿@page "/assignments/{CourseCode}"
+@rendermode InteractiveServer
+@using Library.Canvas;
+@inject Library.Canvas.AssignmentService AssignmentService
+@inject NavigationManager NavigationManager
+
+<h3>Assignment Detail</h3>
+
+<EditForm Model="@newAssignment" OnValidSubmit="HandleSubmit">
+    <div class="form-group">
+        <label for="name">Assignment Name:</label>
+        <InputText id="name" @bind-Value="newAssignment.Name" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label for="description">Description:</label>
+        <InputText id="description" @bind-Value="newAssignment.Description" class="form-control"/>
+    </div>
+    <div class="form-group">
+        <label for="totalPoints">Total Points:</label>
+        <InputText id="totalPoints" @bind-Value="newAssignment.TotalAvailablePoints" class="form-control"/>
+    </div>
+    <div class="form-group">
+        <label for="description">Due Date:</label>
+        <InputText id="dueDate" @bind-Value="newAssignment.DueDate" class="form-control"/>
+    </div>
+    <button type="submit" class="btn btn-success">Save Assignment</button>
+</EditForm>
+@if(relatedAssignments.Any())
+{
+    <h4>Existing Assignments:</h4>
+    <ul>
+        @foreach(var assignment in relatedAssignments)
+        {
+            <li>@assignment.Name - @assignment.Description - @assignment.TotalAvailablePoints - @assignment.DueDate</li>
+        }
+    </ul>
+}
+else
+{
+    <p>No assignments related to this course yet.</p>
+}
+
+
+@code {
+    [Parameter]
+    public string? CourseCode{get; set;}
+
+    private Assignment newAssignment = new Assignment();
+    private List<Assignment> relatedAssignments = new List<Assignment>();
+    
+    protected override void OnInitialized()
+    {
+        LoadAssignments();
+    }
+
+    private void LoadAssignments()
+    {
+        relatedAssignments = AssignmentService.Assignments
+            .Where(a => a.Description.Contains(CourseCode ?? "", StringComparison.OrdinalIgnoreCase) || 
+                        a.Name.Contains(CourseCode ?? "", StringComparison.OrdinalIgnoreCase))
+            .ToList();
+    }
+
+    private void HandleSubmit()
+    {
+        // Simulate linking the assignment to the course code in the description
+        newAssignment.Description += $" (Related to course: {CourseCode})";
+        AssignmentService.AddAssignment(newAssignment);
+        newAssignment = new Assignment(); // Reset the form
+        LoadAssignments(); // Reload the assignments to update the list
+    }
+
+}
