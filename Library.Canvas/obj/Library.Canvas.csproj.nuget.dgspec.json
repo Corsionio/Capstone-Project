@@ -1,0 +1,134 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\Corso\\Desktop\\Blazor\\Capstone-Project-Instructor_Blazor\\CanvasFull\\Library.Canvas\\Library.Canvas.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\Corso\\Desktop\\Blazor\\Capstone-Project-Instructor_Blazor\\CanvasFull\\Canvas\\Canvas.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Corso\\Desktop\\Blazor\\Capstone-Project-Instructor_Blazor\\CanvasFull\\Canvas\\Canvas.csproj",
+        "projectName": "Canvas",
+        "projectPath": "C:\\Users\\Corso\\Desktop\\Blazor\\Capstone-Project-Instructor_Blazor\\CanvasFull\\Canvas\\Canvas.csproj",
+        "packagesPath": "C:\\Users\\Corso\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Corso\\Desktop\\Blazor\\Capstone-Project-Instructor_Blazor\\CanvasFull\\Canvas\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Corso\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Corso\\Desktop\\Blazor\\Capstone-Project-Instructor_Blazor\\CanvasFull\\Library.Canvas\\Library.Canvas.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Corso\\Desktop\\Blazor\\Capstone-Project-Instructor_Blazor\\CanvasFull\\Library.Canvas\\Library.Canvas.csproj",
+        "projectName": "Library.Canvas",
+        "projectPath": "C:\\Users\\Corso\\Desktop\\Blazor\\Capstone-Project-Instructor_Blazor\\CanvasFull\\Library.Canvas\\Library.Canvas.csproj",
+        "packagesPath": "C:\\Users\\Corso\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Corso\\Desktop\\Blazor\\Capstone-Project-Instructor_Blazor\\CanvasFull\\Library.Canvas\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Corso\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Users\\Corso\\Desktop\\Blazor\\Capstone-Project-Instructor_Blazor\\CanvasFull\\Canvas\\Canvas.csproj": {
+                "projectPath": "C:\\Users\\Corso\\Desktop\\Blazor\\Capstone-Project-Instructor_Blazor\\CanvasFull\\Canvas\\Canvas.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
