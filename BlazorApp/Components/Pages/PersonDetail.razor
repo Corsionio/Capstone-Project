@@ -1,0 +1,71 @@
+﻿@page "/persondetail"
+@page "/persondetail/{StudentId:int}"
+@rendermode InteractiveServer
+@using Library.Canvas;
+@using static Library.Canvas.Person
+@inject Library.Canvas.StudentService StudentService;
+@inject NavigationManager NavigationManager;
+
+<h3>PersonDetail</h3>
+
+<PageTitle>Peron Detail</PageTitle>
+
+<p role="status">Enter Student Details</p>
+
+<EditForm Model="@newStudent" OnValidSubmit="HandleSubmit">
+        <div class="form-group">
+            <label for="studentId">Student ID (Read-only):</label>
+            <InputNumber id="studentId" @bind-Value="newStudent.Id" class="form-control"/>
+        </div>
+        <div class="form-group">
+            <label for="name">Name</label>
+             <InputText id="name" @bind-Value="newStudent.Name" placeholder="Enter student name" />
+        </div>
+        <div>
+        @foreach(var classification in Enum.GetValues<PersonClassification>())
+        {
+            <button type="button" class="btn btn-secondary" @onclick="() => SetClassifaction(classification)">
+            @classification
+            </button>
+        }
+        </div>
+        <button type="submit" class=btn btn-primary">OK</button>
+        
+</EditForm>
+
+@code {
+    [Parameter]
+    public int? StudentId {get; set;}
+    private Person newStudent = new Person();
+
+
+    protected override void OnParametersSet()
+    {
+        if (StudentId.HasValue)
+        {
+            var student = StudentService.Students.FirstOrDefault(s => s.Id == StudentId.Value);
+            if (student != null)
+            {
+                newStudent = student;
+            }
+        }
+    }
+
+    private void SetClassifaction(Person.PersonClassification classification)
+    {
+        newStudent.Classification = classification;
+    }
+     private void HandleSubmit()
+    {
+        if(StudentId.HasValue)
+        {
+            StudentService.Update(newStudent);
+        }
+        else{
+        StudentService.Add(newStudent);
+        NavigationManager.NavigateTo("/instructor"); // Navigate to instructor view after adding
+        newStudent = new Person(); // Reset the form
+        }
+    }
+
+}

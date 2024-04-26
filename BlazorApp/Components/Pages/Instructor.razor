@@ -1,0 +1,73 @@
+﻿@page "/instructor"
+@using Library.Canvas
+@inject Library.Canvas.StudentService StudentService
+@rendermode InteractiveServer
+
+<PageTitle>Instructor</PageTitle>
+
+<h1>Instructor</h1>
+
+<div style="display: flex; justify-content: space-between; align-items: center;">
+    <p role="status">Add a Student</p>
+    <button class="btn btn-primary" @onclick="CoursePage">Courses</button>
+</div>
+
+
+<button class="btn btn-primary" @onclick="AddEnrollment">Add Enrollemnt</button>
+<button class="btn btn-danger" style="margin-left:10px;" @onclick="DeleteEnrollment">Delete Enrollment</button>
+<button class="btn btn-danger" style="margin-left:10px;" @onclick="EditEnrollment">Edit Enrollment</button>
+<button class="btn btn-primary" style="margin-left:10px;" @onclick="AddCourses">Add Courses</button>
+@if (StudentService.Students.Any())
+{
+    <ul>
+        @foreach (var student in StudentService.Students)
+        {
+           <li @onclick="@(() => SelectStudent(student))"
+                style="cursor: pointer; background-color: @(student == _selectedStudent ? "lightblue" : "transparent")">
+                @student.Id - @student.Name - @student.Classification
+            </li>
+        }
+    </ul>
+}
+else
+{
+    <p>No students added yet.</p>
+}
+@code {
+    @inject NavigationManager NavigationManager
+    private Person _selectedStudent;
+    private void AddEnrollment()
+    {
+     NavigationManager.NavigateTo("/persondetail");
+    }
+
+    private void SelectStudent(Person student)
+    {
+        _selectedStudent = student;
+        StateHasChanged();
+    }
+    private void DeleteEnrollment()
+    {
+       if (_selectedStudent != null)
+        {
+            StudentService.Students.Remove(_selectedStudent);
+            _selectedStudent = null; // Clear selection after deletion
+            StateHasChanged(); // Refresh UI to reflect the changes
+        }
+    }
+    private void EditEnrollment()
+    {
+       if(_selectedStudent != null){
+        NavigationManager.NavigateTo($"/persondetail/{_selectedStudent.Id}");
+       } 
+    }
+    private void AddCourses(){
+        if(_selectedStudent != null){
+            NavigationManager.NavigateTo($"/courseadd/{_selectedStudent.Id.ToString()}");
+        }
+    }
+    private void CoursePage()
+    {
+        NavigationManager.NavigateTo("/coursedetail");
+    }
+}
