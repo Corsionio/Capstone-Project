@@ -1,0 +1,46 @@
+﻿@page "/student"
+@rendermode InteractiveServer
+@using Library.Canvas
+@using Canvas.Models
+@using static Library.Canvas.Course
+@using static Library.Canvas.Person
+@inject Library.Canvas.CourseService CourseService
+@inject Library.Canvas.StudentService StudentService 
+
+<PageTitle>Student</PageTitle>
+
+<h1>Student</h1>
+
+<p>Please pick a student to see courses</p>
+
+@if (StudentService.Students.Any())
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Student</th>
+                <th>Courses</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var student in StudentService.Students)
+            {
+                <tr>
+                    <td>@student.Name</td>
+                    <td>
+                    @if (student.Courses != null && student.Courses.Any())
+                        {
+                            @foreach (var course in student.Courses)
+                            {
+                                @course.Name <br />
+                            }
+                        }
+                        else{
+                            <text>None</text>
+                        }
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
