@@ -8,24 +8,25 @@
     "net8.0": []
   },
   "packageFolders": {
-    "C:\\Users\\Corso\\.nuget\\packages\\": {}
+    "/Users/aarongallon/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Corso\\Desktop\\CanvasFull\\Canvas\\Canvas.csproj",
+      "projectUniqueName": "/Users/aarongallon/Capstone-Project-1/CanvasFull/Canvas/Canvas.csproj",
       "projectName": "Canvas",
-      "projectPath": "C:\\Users\\Corso\\Desktop\\CanvasFull\\Canvas\\Canvas.csproj",
-      "packagesPath": "C:\\Users\\Corso\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Corso\\Desktop\\CanvasFull\\Canvas\\obj\\",
+      "projectPath": "/Users/aarongallon/Capstone-Project-1/CanvasFull/Canvas/Canvas.csproj",
+      "packagesPath": "/Users/aarongallon/.nuget/packages/",
+      "outputPath": "/Users/aarongallon/Capstone-Project-1/CanvasFull/Canvas/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Corso\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "/Users/aarongallon/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
       ],
       "sources": {
+        "/usr/local/share/dotnet/library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -59,7 +60,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.101/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
